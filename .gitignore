@@ -1,0 +1,19 @@
+# Build and Object Files
+*.exe
+*.o
+*.obj
+*.class
+*.out
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large documentation / assignment PDFs
+*.pdf
