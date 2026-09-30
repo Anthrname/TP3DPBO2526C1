@@ -329,6 +329,7 @@ Program telah dilengkapi dengan sistem penanganan error (*Exception Handling*) d
 
 ```
 TP 3/
+├── .gitignore
 ├── CPP/
 │   ├── Program/
 │   │   ├── SivitasAkademik.hpp
@@ -343,8 +344,7 @@ TP 3/
 │   │   ├── ProgramStudi.cpp
 │   │   ├── Fakultas.hpp
 │   │   ├── Fakultas.cpp
-│   │   ├── Main.cpp
-│   │   └── main.exe
+│   │   └── Main.cpp
 │   └── Dokumentasi/
 │       ├── cpp_sebelum.png
 │       ├── cpp_sesudah.png
@@ -370,8 +370,7 @@ TP 3/
 │   │   ├── AsistenDosen.java
 │   │   ├── ProgramStudi.java
 │   │   ├── Fakultas.java
-│   │   ├── Main.java
-│   │   └── *.class
+│   │   └── Main.java
 │   └── Dokumentasi/
 │       ├── java_sebelum.png
 │       ├── java_sesudah.png
@@ -389,7 +388,6 @@ TP 3/
 │       ├── php_sebelum.png
 │       ├── php_sesudah.png
 │       └── php_demo.png
-├── DPBO - Inheritance Lanjutan 2026.pdf
 ├── generate_docs.py
 └── README.md
 ```
