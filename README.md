@@ -8,18 +8,17 @@
 ## 📖 DESKRIPSI PROGRAM
 Program ini mengimplementasikan konsep **Hybrid Inheritance (Kombinasi Hierarchical & Multilevel Inheritance)** serta **Composition (Komposisi)** dan **Array of Objects** dalam studi kasus **Sistem Manajemen Struktur Akademik Fakultas & Program Studi (Smart Campus Academic Management System)** pada Object-Oriented Programming (OOP).
 
-Repositori ini menyediakan implementasi lengkap ke dalam **4 bahasa pemrograman**:
+Repositori ini menyediakan implementasi lengkap ke dalam **3 bahasa pemrograman**:
 - 🔷 **C++** (C++17 Standar, CLI)
 - 🐍 **Python** (Python 3, CLI)
 - ☕ **Java** (Java 21, CLI)
-- 🐘 **PHP** (PHP 8, CLI & Responsive Web Interface)
 
 ### Fitur Utama Program:
 - Inisialisasi data hierarki Fakultas dan Program Studi lengkap dengan Dekan, Kaprodi, Dosen, Mahasiswa, dan Asisten Dosen.
 - Menampilkan kondisi data lengkap **SEBELUM** dilakukan penambahan data baru.
 - Melakukan operasi **Penambahan Data (Add Data)** baik pada Program Studi yang sudah ada (tambah Mahasiswa & Asisten Dosen) maupun penambahan **Program Studi Baru** ke dalam Fakultas.
 - Menampilkan kondisi data lengkap **SESUDAH** dilakukan penambahan data baru.
-- Format tabel CLI yang rapi, informatif, dan dinamis, serta antarmuka web modern pada PHP.
+- Format tabel CLI yang rapi, informatif, dan dinamis.
 
 ---
 
@@ -255,11 +254,10 @@ Kumpulan entitas diorganisasi menggunakan struktur larik objek dinamis:
 - **C++**: `std::vector<Dosen>`, `std::vector<Mahasiswa>`, `std::vector<AsistenDosen>`, `std::vector<ProgramStudi>`.
 - **Python**: `List[Dosen]`, `List[Mahasiswa]`, `List[AsistenDosen]`, `List[ProgramStudi]`.
 - **Java**: `List<Dosen>`, `List<Mahasiswa>`, `List<AsistenDosen>`, `List<ProgramStudi>` yang diinstansiasi dengan `ArrayList`.
-- **PHP**: `array` bertipe objek (`Dosen[]`, `Mahasiswa[]`, `AsistenDosen[]`, `ProgramStudi[]`).
 
 ### 4. Implementasi Error Handling & Validasi Data
 Program telah dilengkapi dengan sistem penanganan error (*Exception Handling*) dan validasi integritas data yang konsisten di semua bahasa:
-- **Validasi Nilai IPK**: Memastikan nilai IPK mahasiswa berada dalam rentang valid `0.00` s.d. `4.00`. Jika di luar rentang, dilemparkan exception (`std::invalid_argument` / `ValueError` / `IllegalArgumentException` / `InvalidArgumentException`).
+- **Validasi Nilai IPK**: Memastikan nilai IPK mahasiswa berada dalam rentang valid `0.00` s.d. `4.00`. Jika di luar rentang, dilemparkan exception (`std::invalid_argument` / `ValueError` / `IllegalArgumentException`).
 - **Validasi Semester & Honor**: Memastikan nilai semester minimal `1` dan honor bulanan asisten tidak bernilai negatif (`>= 0`).
 - **Validasi String/ID**: Memastikan field penting seperti NIK, NIM, ID Asisten, Kode Prodi, dan Nama Prodi tidak kosong.
 - **Validasi Pencegahan Duplikasi Data**:
@@ -267,7 +265,7 @@ Program telah dilengkapi dengan sistem penanganan error (*Exception Handling*) d
   - `tambahMahasiswa()`: Mencegah pendaftaran mahasiswa dengan NIM duplikat.
   - `tambahAsistenDosen()`: Mencegah pendaftaran asisten dengan ID Asisten yang sudah ada.
   - `tambahProdi()`: Mencegah pendaftaran program studi dengan Kode Prodi yang sudah ada di dalam fakultas.
-- **Blok Try-Catch / Try-Except**: Setiap *entry point* program (`Main.cpp`, `main.py`, `Main.java`, `index.php`) memiliki blok demonstrasi pengujian error handling untuk menangkap kesalahan secara aman tanpa menyebabkan program *crash*.
+- **Blok Try-Catch / Try-Except**: Setiap *entry point* program (`Main.cpp`, `main.py`, `Main.java`) memiliki blok demonstrasi pengujian error handling untuk menangkap kesalahan secara aman tanpa menyebabkan program *crash*.
 
 ---
 
@@ -314,14 +312,6 @@ Program telah dilengkapi dengan sistem penanganan error (*Exception Handling*) d
   ![Java Data Awal](Java/Dokumentasi/java_sebelum.png)
 - **Kondisi Sesudah Penambahan Data**:
   ![Java Data Akhir](Java/Dokumentasi/java_sesudah.png)
-
----
-
-### 4. PHP (PHP 8)
-- **Kondisi Sebelum Penambahan Data**:
-  ![PHP Data Awal](PHP/Dokumentasi/php_sebelum.png)
-- **Kondisi Sesudah Penambahan Data**:
-  ![PHP Data Akhir](PHP/Dokumentasi/php_sesudah.png)
 
 ---
 
@@ -375,19 +365,6 @@ TP 3/
 │       ├── java_sebelum.png
 │       ├── java_sesudah.png
 │       └── java_demo.png
-├── PHP/
-│   ├── Program/
-│   │   ├── SivitasAkademik.php
-│   │   ├── Dosen.php
-│   │   ├── Mahasiswa.php
-│   │   ├── AsistenDosen.php
-│   │   ├── ProgramStudi.php
-│   │   ├── Fakultas.php
-│   │   └── index.php
-│   └── Dokumentasi/
-│       ├── php_sebelum.png
-│       ├── php_sesudah.png
-│       └── php_demo.png
 ├── generate_docs.py
 └── README.md
 ```

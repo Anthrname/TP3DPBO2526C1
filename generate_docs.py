@@ -72,10 +72,6 @@ py_out = res_py.stdout
 res_java = subprocess.run(["java", "-cp", "Java/Program", "Main"], capture_output=True, text=True, cwd=".")
 java_out = res_java.stdout
 
-# Run PHP
-res_php = subprocess.run(["php", "PHP/Program/index.php"], capture_output=True, text=True, cwd=".")
-php_out = res_php.stdout
-
 def split_stages(out_text):
     parts = out_text.split("PROSES PENAMBAHAN DATA ENTITAS BARU")
     if len(parts) == 2:
@@ -87,7 +83,6 @@ def split_stages(out_text):
 cpp_s1, cpp_s2 = split_stages(cpp_out)
 py_s1, py_s2 = split_stages(py_out)
 java_s1, java_s2 = split_stages(java_out)
-php_s1, php_s2 = split_stages(php_out)
 
 render_terminal_image("C++ Terminal - Data Awal (Sebelum Penambahan)", cpp_s1, "CPP/Dokumentasi/cpp_sebelum.png")
 render_terminal_image("C++ Terminal - Penambahan & Data Akhir (Sesudah Penambahan)", cpp_s2, "CPP/Dokumentasi/cpp_sesudah.png")
@@ -100,7 +95,3 @@ render_terminal_image("Python Terminal - Output Lengkap Eksekusi", py_out, "Pyth
 render_terminal_image("Java Terminal - Data Awal (Sebelum Penambahan)", java_s1, "Java/Dokumentasi/java_sebelum.png")
 render_terminal_image("Java Terminal - Penambahan & Data Akhir (Sesudah Penambahan)", java_s2, "Java/Dokumentasi/java_sesudah.png")
 render_terminal_image("Java Terminal - Output Lengkap Eksekusi", java_out, "Java/Dokumentasi/java_demo.png", max_lines=120)
-
-render_terminal_image("PHP Terminal - Data Awal (Sebelum Penambahan)", php_s1, "PHP/Dokumentasi/php_sebelum.png")
-render_terminal_image("PHP Terminal - Penambahan & Data Akhir (Sesudah Penambahan)", php_s2, "PHP/Dokumentasi/php_sesudah.png")
-render_terminal_image("PHP Terminal - Output Lengkap Eksekusi", php_out, "PHP/Dokumentasi/php_demo.png", max_lines=120)
