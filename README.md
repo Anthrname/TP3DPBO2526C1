@@ -292,25 +292,25 @@ Program telah dilengkapi dengan sistem penanganan error (*Exception Handling*) d
 ## 📸 DOKUMENTASI EKSEKUSI PROGRAM
 
 ### 1. C++ (C++17)
-- **Kondisi Sebelum Penambahan Data**:
+- **Kondisi Sebelum Penambahan Data (Tahap 1)**:
   ![C++ Data Awal](CPP/Dokumentasi/cpp_sebelum.png)
-- **Kondisi Sesudah Penambahan Data**:
+- **Kondisi Sesudah Penambahan Data (Tahap 2)**:
   ![C++ Data Akhir](CPP/Dokumentasi/cpp_sesudah.png)
 
 ---
 
 ### 2. Python (Python 3)
-- **Kondisi Sebelum Penambahan Data**:
+- **Kondisi Sebelum Penambahan Data (Tahap 1)**:
   ![Python Data Awal](Python/Dokumentasi/python_sebelum.png)
-- **Kondisi Sesudah Penambahan Data**:
+- **Kondisi Sesudah Penambahan Data (Tahap 2)**:
   ![Python Data Akhir](Python/Dokumentasi/python_sesudah.png)
 
 ---
 
 ### 3. Java (Java 21)
-- **Kondisi Sebelum Penambahan Data**:
+- **Kondisi Sebelum Penambahan Data (Tahap 1)**:
   ![Java Data Awal](Java/Dokumentasi/java_sebelum.png)
-- **Kondisi Sesudah Penambahan Data**:
+- **Kondisi Sesudah Penambahan Data (Tahap 2)**:
   ![Java Data Akhir](Java/Dokumentasi/java_sesudah.png)
 
 ---
@@ -336,6 +336,11 @@ TP 3/
 │   │   ├── Fakultas.cpp
 │   │   └── Main.cpp
 │   └── Dokumentasi/
+│       ├── cpp_1_tahap1_prodi1.png
+│       ├── cpp_2_tahap1_prodi2.png
+│       ├── cpp_3_proses_penambahan.png
+│       ├── cpp_4_tahap2_prodi1.png
+│       ├── cpp_5_tahap2_prodi3.png
 │       ├── cpp_sebelum.png
 │       ├── cpp_sesudah.png
 │       └── cpp_demo.png
@@ -349,6 +354,11 @@ TP 3/
 │   │   ├── Fakultas.py
 │   │   └── main.py
 │   └── Dokumentasi/
+│       ├── python_1_tahap1_prodi1.png
+│       ├── python_2_tahap1_prodi2.png
+│       ├── python_3_proses_penambahan.png
+│       ├── python_4_tahap2_prodi1.png
+│       ├── python_5_tahap2_prodi3.png
 │       ├── python_sebelum.png
 │       ├── python_sesudah.png
 │       └── python_demo.png
@@ -362,6 +372,11 @@ TP 3/
 │   │   ├── Fakultas.java
 │   │   └── Main.java
 │   └── Dokumentasi/
+│       ├── java_1_tahap1_prodi1.png
+│       ├── java_2_tahap1_prodi2.png
+│       ├── java_3_proses_penambahan.png
+│       ├── java_4_tahap2_prodi1.png
+│       ├── java_5_tahap2_prodi3.png
 │       ├── java_sebelum.png
 │       ├── java_sesudah.png
 │       └── java_demo.png

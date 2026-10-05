@@ -1,6 +1,6 @@
 // Main.java
 // Program Utama TP 3 DPBO - Implementasi Hybrid Inheritance & Composition (Java)
-// Penulis: Najib Nurohman (NIM: 2509653)
+// Najib Nurohman (NIM: 2509653)
 
 public class Main {
     public static void main(String[] args) {

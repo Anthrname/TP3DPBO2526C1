@@ -60,13 +60,7 @@ def render_terminal_image(title: str, text: str, output_path: str, max_lines: in
     img.save(output_path)
     print(f"Saved: {output_path}")
 
-# Run C++
-res_cpp = subprocess.run(["CPP/Program/main.exe"], capture_output=True, text=True, cwd=".")
-cpp_out = res_cpp.stdout
-
-# Run Python
-res_py = subprocess.run(["python", "Python/Program/main.py"], capture_output=True, text=True, cwd=".")
-py_out = res_py.stdout
+# (C++ and Python screenshot documentations use user's actual terminal capture)
 
 # Run Java
 res_java = subprocess.run(["java", "-cp", "Java/Program", "Main"], capture_output=True, text=True, cwd=".")
@@ -80,17 +74,7 @@ def split_stages(out_text):
         return part1, part2
     return out_text, out_text
 
-cpp_s1, cpp_s2 = split_stages(cpp_out)
-py_s1, py_s2 = split_stages(py_out)
 java_s1, java_s2 = split_stages(java_out)
-
-render_terminal_image("C++ Terminal - Data Awal (Sebelum Penambahan)", cpp_s1, "CPP/Dokumentasi/cpp_sebelum.png")
-render_terminal_image("C++ Terminal - Penambahan & Data Akhir (Sesudah Penambahan)", cpp_s2, "CPP/Dokumentasi/cpp_sesudah.png")
-render_terminal_image("C++ Terminal - Output Lengkap Eksekusi", cpp_out, "CPP/Dokumentasi/cpp_demo.png", max_lines=120)
-
-render_terminal_image("Python Terminal - Data Awal (Sebelum Penambahan)", py_s1, "Python/Dokumentasi/python_sebelum.png")
-render_terminal_image("Python Terminal - Penambahan & Data Akhir (Sesudah Penambahan)", py_s2, "Python/Dokumentasi/python_sesudah.png")
-render_terminal_image("Python Terminal - Output Lengkap Eksekusi", py_out, "Python/Dokumentasi/python_demo.png", max_lines=120)
 
 render_terminal_image("Java Terminal - Data Awal (Sebelum Penambahan)", java_s1, "Java/Dokumentasi/java_sebelum.png")
 render_terminal_image("Java Terminal - Penambahan & Data Akhir (Sesudah Penambahan)", java_s2, "Java/Dokumentasi/java_sesudah.png")
